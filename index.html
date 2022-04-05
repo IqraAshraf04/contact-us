@@ -3,143 +3,83 @@
     <title>Contact Us Page</title>
 
 </head>
-
 <body>
     <style>
         *{
             margin: 0;
             padding: 0;
+            font-family: sans-serif;
         }
-
-        .option ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: left;
-            color: white;
-            margin-left: 0px;
-            background-color: black;
-            background-position: center;
-            background-size: cover;
-            height: 7vh;
-            padding-right: 10px;
-
-        }
-
-        .option ul li {
-            list-style: none;
-            padding: 10px;
-            margin-left: 70px;
-
-        }
-
-        .option ul li:hover {
-            background-color: black;
-           
-            padding: 18px;
-            margin-top: 3px;
-            margin-bottom: 3px;
-
-        }
-
-        .option ul:hover {
-            background-color: red;
+        .contact-section{
+            background: url(wood.jpg.jpg); no-repeat center;
+            padding: 40px 0;
+            
             
         }
-
-        .option button {
-            margin-left: 1200px;
-            position: absolute;
-            margin-top: 10px;
-            border: 1px solid gray;
-            padding: 5px 10px;
+        .contact-section h1{
+            text-align: center;
+            color: #ddd;
+        }
+        .border{
+            width: 100px;
+            height: 10px;
+            background: #34495e;
+            margin: 40px auto;
         }
 
-        .option button:hover {
-            background-color: grey;
-            color: black;
-
+        .contact-form{
+            max-width: 600px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: hidden;
         }
-
-        .con {
-
-            height: 70vh;
+        .contact-form-text{
+            display: block;
             width: 100%;
-            background-size: cover;
-            margin-left: 0px;
-            padding: 10px;
-            background-image: url(page.jpg.jpg);
-            background-repeat: no-repeat;
+            box-sizing: border-box;
+            margin: 16px 0;
+            border: 0;
+            background: #111;
+            padding: 20px 40px;
+            outline: none;
+            color: #ddd;
+            transition: 0.5s;
         }
-
-        .con h1 {
-            margin-left: 500px;
-            margin-top: 200px;
-            font-size: 40px;
-            color: white;
+        .contact-form-text:hover{
+            box-shadow: 0 0 10px 4px #34495e;
         }
-
-        .convo {
-            display: flex;
-            justify-content: center;
-            padding-top: 50px;
+        textarea.contact-form-text{
+            resize: none;
+            height: 120px;
         }
-        .main12{
-            display: flex;
-            flex-direction: row;
-            margin-left: 40px;
-            margin-top: 40px;
+        .contact-form-btn{
+            float: right;
+            border: 0;
+            background: #34495e;
+            color: #fff;
+            padding: 12px 50px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
         }
-        .class2{
-            margin-left: 60px;
-            margin-top: 40px;
-        }
-        .class1{
-            margin-top: 40px;
-        }
-        .class1 h4{
-            margin-top: 20px;
+        .contact-form-btn:hover{
+            background: #2980b9;
         }
     </style>
-    <div class="option">
+    <div class="contact-section">
+
+<h1>Contact Us</h1>
+<div class="border"></div>
+<form class="contact-form" action="index.html" method="post">
+    <input type="text" class="contact-form-text" placeholder="Your name">
+    <input type="email" class="contact-form-text" placeholder="Email">
+    <input type="text" class="contact-form-text" placeholder="Your phone"><br>
+    <textarea class="contact-form-text" placeholder="Your message"></textarea> 
+    <input type="submit" class="contact-form-btn" value="send">
 
 
-        <ul>
-            <li>SOLUTION</li>
-            <li>WHY ROYAL BIKES</li>
-            <li>PRICING</li>
-            <li>LEARN</li>
-            <li>SUPPORT</li>
-            <li>ABOUT</li>
-            <li>BLOG</li>
-            <button>GET STARTED</button>
-        </ul>
-    </div>
-    <div class="con">
-        <h1>Contact Us</h1>
-    </div>
-    <div class="convo">
-        <h1>Let's start a conversation</h1>
-    </div>
-    <div class="main12">
-        <div class="class1">
-            <h3>Ask how we can help you</h3>
-            <h4>See our platform in action</h4>
-            <p>Request a personalized demo or sign up for a <a href="">30 days free trial</a>of ROYAL BIKES <br>perfomance marketing platform.</p>
-            <h4>Master perfomance marketing.</h4>
-            <p>From <a href="">ROYAl BIKES academy courses</a>to industry <a href="">research</a>and <a href="">insights.</a></p>
+</form>
 
-        </div>
-        <div class="class2">
-            <h3>Please note: all fields are required.</h3>
-            <span>First Name</span><br>
-            <input type="First Name"  placeholder="" required><br>
-            <span>Last Name</span><br> 
-            <input type="Last Name" placeholder="" required><br>
-            <span>Email</span><br>
-            <input type="Email" placeholder="" required><br> 
-            <span>Password</span><br>
-            <input type="Password" placeholder="" required>                
     </div>
 </body>
-
 </html>
